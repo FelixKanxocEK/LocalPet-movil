@@ -1,39 +1,37 @@
-import * as React from 'react';
-import { View, Text } from 'react-native';
+import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import React from 'react';
+// import { View, Text } from 'react-native'
+// import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
+import Splash from './src/Screens.js/Splash';
+import Login from './src/Screens.js/Login';
+import SignOut from './src/Screens.js/SignOut'
+// import Registration from './src/Components.js/auth/Registration';
 
-function Feed() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Feed Screen</Text>
-    </View>
-  );
-}
 
-function Article() {
-  return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Article Screen</Text>
-    </View>
-  );
-}
+// import Home from './Home';
 
-const Drawer = createDrawerNavigator();
+// import Dashboard from './src/Screens.js/Dashboard';
 
-function MyDrawer() {
-  return (
-    <Drawer.Navigator useLegacyImplementation>
-      <Drawer.Screen name="Feed" component={Feed} />
-      <Drawer.Screen name="Article" component={Article} />
-    </Drawer.Navigator>
-  );
-}
+const Stack = createStackNavigator();
 
-export default function App() {
+const App = () => {
   return (
     <NavigationContainer>
-      <MyDrawer />
+      <Stack.Navigator screenOptions={{headerShown:false}}>
+        <Stack.Screen name='Splash' component={Splash}/>
+        <Stack.Screen name='Login' component={Login}/>
+        <Stack.Screen name='SignOut' component={SignOut} />
+      </Stack.Navigator>
     </NavigationContainer>
-  );
+    // <View>
+    //   <Text>Hoola</Text>
+    //   <NavigationContainer> 
+    //     <Home/>
+    //   </NavigationContainer> 
+    // </View>
+  )
 }
+
+export default App
