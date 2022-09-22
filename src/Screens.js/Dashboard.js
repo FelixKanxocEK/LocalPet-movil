@@ -9,7 +9,7 @@ import { Card } from 'react-native-paper'
 const Dashboard = () => {
   return (
 
-    <View style={{ justifyContent: 'center',flex: 1, backgroundColor: '#cbd5e1' }}>
+    <View style={{justifyContent: 'center',flex: 1, backgroundColor: '#cbd5e1' }}>
       <View style={{justifyContent: 'center', alignContent: 'center'}}>
         <Card style={{marginHorizontal: 10, padding: 40, alignItems: 'center', justifyContent: 'center'}}>
           <Text style={{fontSize: 20}}>Hola</Text>
