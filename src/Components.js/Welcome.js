@@ -61,19 +61,19 @@ const Welcome = () => {
                     </View>
                 </Card>
                 <View style={[Theme.styles.m20, Theme.styles.alignCenter, Theme.styles.mt30, Theme.styles.mb30]}>
-                    <Text style={[Theme.colors.ColorOrange, Theme.styles.f18, Theme.styles.bold ]}>
+                    <Text style={[Theme.colors.ColorOrange, Theme.styles.f18, Theme.styles.bold]}>
                         Beneficios de LocalPet
                     </Text> 
-                        <Image source={require('../img/alcance.png')} style={[Theme.styles.w180, Theme.styles.h180, Theme.styles.mt15]}/>
-                    <Text style={[Theme.styles.mt10, Theme.styles.bold, Theme.styles.f15]}>
+                        <Image source={require('../img/alcance.png')} style={[Theme.styles.w180, Theme.styles.h180, Theme.styles.mt30]}/>
+                    <Text style={[Theme.styles.mt10, Theme.styles.bold, Theme.styles.f15, Theme.styles.uper]}>
                         Mayor alcance
                     </Text>
-                    <Image source={require('../img/icono-clientes.png')} style={[Theme.styles.w180, Theme.styles.h180, Theme.styles.mt15]}/>
-                    <Text style={[Theme.styles.bold, Theme.styles.f15, Theme.styles.mt10]}>
+                    <Image source={require('../img/icono-clientes.png')} style={[Theme.styles.w180, Theme.styles.h180, Theme.styles.mt30]}/>
+                    <Text style={[Theme.styles.bold, Theme.styles.f15, Theme.styles.mt10 ,Theme.styles.uper]}>
                         Más clientes
                     </Text>
-                    <Image source={require('../img/servicio.png')} style={[Theme.styles.w180, Theme.styles.h180, Theme.styles.mt15]}/>
-                    <Text style={[Theme.styles.bold, Theme.styles.mt10, Theme.styles.f15]}>
+                    <Image source={require('../img/servicio.png')} style={[Theme.styles.w180, Theme.styles.h180, Theme.styles.mt30]}/>
+                    <Text style={[Theme.styles.bold, Theme.styles.mt10, Theme.styles.f15, Theme.styles.uper]}>
                         Información Completa
                     </Text>
                 </View>
