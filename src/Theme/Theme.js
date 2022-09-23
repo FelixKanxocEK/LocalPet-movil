@@ -13,9 +13,11 @@ const Theme = {
         //colors
         WhiteColor: {color: '#FFF'},
         ColorOrange: {color: '#F58216'},
-
+        OrangeEdge: {borderColor: '#F58216'}
     },
     styles: {
+         //bordes
+        Edge: {borderWidth: 2},
         //font
         bold: {fontWeight: 'bold'},
         //size font
@@ -34,7 +36,7 @@ const Theme = {
         justifyCenter: {justifyContent: 'center'},
         //flex
         flex1: {flex: 1},
-        flexrow: {flex: 'row'},
+        flexrow: {flexDirection: 'row'},
         flexColumn: {flexDirection: 'column'},
         //padding 
         padding15: {padding: 15},
@@ -53,11 +55,17 @@ const Theme = {
         mb30: {marginBottom: 30},
         mb35: {marginBottom: 35},
         //margin top
+        mt5: {marginTop: 5},
         mt10: {marginTop: 10},
         mt15: {marginTop: 15},
         mt20: {marginTop: 20},
         mt25: {marginTop: 25},
         mt30: {marginTop: 30},
+        //margin Vertical
+        mv10: {marginVertical: 10},
+        mv15: {marginVertical: 15},
+        mv20: {marginVertical: 20},
+        mv30: {marginVertical: 30},
         //margin horizontal
         mh10: {marginHorizontal: 10},
         mh15: {marginHorizontal: 15},
@@ -76,18 +84,28 @@ const Theme = {
         redondo15: {borderRadius: 15},
         redondo20: {borderRadius: 20},  
         //width
+        w50: {width: 50},
+        w80: {width: 80},
+        w100: {width: 100},
+        w150: {width: 150},
         w180: {width: 180},
         w200: {width: 200},
-        w50: {width: 50},
-        w100: {width: 100},
-        w80: {width: 80},
-        w150: {width: 150},
+        w250: {width: 250},
+        w300: {width: 300},
+        w350: {width: 350},
+        w400: {width: 400},
+       
         //height
-        h180: {height: 180},
-        h200: {height: 200},
         h50: {height: 50},
         h100: {height: 100},
         h150: {height: 150},
+        h180: {height: 180},
+        h200: {height: 200},
+        h250: {height: 250},
+        h300: {height: 300},
+        h350: {height: 350},
+        h400: {height: 400}
+       
 
     }
 

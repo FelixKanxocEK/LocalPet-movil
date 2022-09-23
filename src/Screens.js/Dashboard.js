@@ -1,24 +1,26 @@
+import * as React from 'react';
+import { Button, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+//Screens
+import AboutUs from '../Screens.js/AboutUs';
+import FindVeterinary from '../Screens.js/FIndVeterinary'
+//Componets
+import Welcome from '../Components.js/Welcome';
 
-import React from 'react'
-import { Text, View, Image  } from 'react-native'
-import { Card } from 'react-native-paper'
 
-
-// const Drawer = createDrawerNavigator();  
+const Drawer = createDrawerNavigator()
 
 const Dashboard = () => {
   return (
-
-    <View style={{justifyContent: 'center',flex: 1, backgroundColor: '#cbd5e1' }}>
-      <View style={{justifyContent: 'center', alignContent: 'center'}}>
-        <Card style={{marginHorizontal: 10, padding: 40, alignItems: 'center', justifyContent: 'center'}}>
-          <Text style={{fontSize: 20}}>Hola</Text>
-          <Image source={require('../img/Logo.png')} style={{width: 100, height: 100}}/>
-          <Text>ODKOAPKP KPOAK POKDPOKAPOK POK OAKPDOKASCJSI A IDIASKP</Text>
-        </Card>
-      </View>
-    </View>
-  )
+    <NavigationContainer independent={true}>
+    <Drawer.Navigator initialRouteName='About-us'>
+      <Drawer.Screen name='Inicio' component={Welcome}/>
+      <Drawer.Screen name="About Us" component={AboutUs} />
+      <Drawer.Screen name='Encontrar Veterinaria' component={FindVeterinary}/>
+    </Drawer.Navigator>
+  </NavigationContainer>
+  );
 }
 
 export default Dashboard
