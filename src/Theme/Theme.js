@@ -10,12 +10,14 @@ const Theme = {
         Whitebackground: { backgroundColor: "#FFFFFF" },
         backgroundBlack: { backgroundColor: '#000' },
         backgroundGrayW: { backgroundColor: 'F5F5F5' },
-        backgroundRed: {backgroundColor: '#F32424'},    
+        backgroundRed: {backgroundColor: '#F32424'},
+        backgroundRed: {backgroundColor: '#DF0000'},    
         //colors
         WhiteColor: { color: '#FFF' },
         ColorGray: { color: '#CBD5E1' },
         ColorOrange: { color: '#F58216' },
-        OrangeEdge: { borderColor: '#F58216' }
+        OrangeEdge: { borderColor: '#F58216' },
+        
     },
     styles: {
         //upercase
@@ -33,11 +35,13 @@ const Theme = {
         f30: { fontSize: 30 },
         f40: { fontSize: 40 },
         //align
+        textCenter: { textAlign: 'center' },
         alignCenter: { alignItems: 'center' },
         alignEnd: { alignItems: 'flex-end' },
-        alignBetwen: { alignItems: 'flex-betwen' },
         //justify
         justifyCenter: { justifyContent: 'center' },
+        justifyEvenly: { justifyContent: 'space-evenly' },
+        justifyBetween: { justifyContent: 'space-between' },
         //flex
         flex1: { flex: 1 },
         flexrow: { flexDirection: 'row' },
@@ -63,6 +67,10 @@ const Theme = {
         mt20: { marginTop: 20 },
         mt25: { marginTop: 25 },
         mt30: { marginTop: 30 },
+        mt40: {marginTop: 40},
+        mt50: {marginTop: 50},
+        mt60: {marginTop: 60},
+        mt70: {marginTop: 70},
         //margin Vertical
         mv10: { marginVertical: 10 },
         mv15: { marginVertical: 15 },
@@ -86,9 +94,19 @@ const Theme = {
         p20: { padding: 20 },
         p25: { padding: 25 },
         p30: { padding: 30 },
+        //paddingHorizontal
+        ph10: {paddingHorizontal: 10},
+        ph15: {paddingHorizontal: 15},
+        ph20: {paddingHorizontal: 20},
+        ph25: {paddingHorizontal: 25},
+        ph30: {paddingHorizontal: 30},
+        ph35: {paddingHorizontal: 35},
+        ph40: {paddingHorizontal: 40},
+        ph45: {paddingHorizontal: 45},
         //paddingVertical
         pv10: {paddingVertical: 10},
         pv20: {paddingVertical: 20},
+        pv25: {paddingVertical: 25},
         pv30: {paddingVertical: 30},
         pv40: {paddingVertical: 40},
         pv50: {paddingVertical: 50},
@@ -104,6 +122,9 @@ const Theme = {
         redondo10: { borderRadius: 10 },
         redondo15: { borderRadius: 15 },
         redondo20: { borderRadius: 20 },
+        redondo30: {borderRadius: 30},
+        redondo40: {borderRadius: 40},
+        redondo50: {borderRadius: 50},
         //width
         w50: { width: 50 },
         w80: { width: 80 },
@@ -118,7 +139,9 @@ const Theme = {
 
         //height
         h50: { height: 50 },
+        h80: {height: 80},
         h100: { height: 100 },
+        h130: {height: 130},
         h150: { height: 150 },
         h180: { height: 180 },
         h200: { height: 200 },
