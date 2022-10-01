@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, } from 'react-native'
 
-const FIndVeterinary = () => {
+const FindVeterinary = ({navigation}) => {
   return (
     <Text>Hola</Text>
   )
 }
 
-export default FIndVeterinary
+export default FindVeterinary

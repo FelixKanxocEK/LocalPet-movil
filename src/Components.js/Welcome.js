@@ -1,9 +1,9 @@
 import React from 'react'
 import { Text, Pressable, View, Image, ScrollView } from 'react-native'
-import { Button, Card } from 'react-native-paper'
+import { Card } from 'react-native-paper'
 import Theme from '../Theme/Theme'
 
-const Welcome = () => {
+const Welcome = ({goVeterinary}) => {
     return (
         <View style={[Theme.styles.flex1, Theme.styles.backgroundGrayW]}>
             <ScrollView>
@@ -16,11 +16,12 @@ const Welcome = () => {
                         Encontrar una veterinaria, nunca había sido tan fácil.
                     </Text>
                     <Image source={require('../img/banner.png')} style={[Theme.styles.w300, Theme.styles.h200]} />
-                    <Button style={[Theme.colors.backgroundOrange]}>
+                    <Pressable  onPress={() => goVeterinary()}
+                    style={[Theme.colors.backgroundOrange, Theme.styles.p10, Theme.styles.redondo5]}>
                         <Text style={[Theme.colors.WhiteColor, Theme.styles.bold, Theme.styles.f16]}>
                             Buscar ahora
                         </Text>
-                    </Button>
+                    </Pressable>
                 </View>
                 <Card style={[Theme.styles.mt20, Theme.styles.mh20]}>
                     <View style={[Theme.styles.mh20, Theme.styles.alignCenter]}>
