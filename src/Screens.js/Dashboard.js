@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 //Screens
 import AboutUs from '../Screens.js/AboutUs';
-import FindVeterinary from '../Screens.js/FindVeterinary'
+import FindVeterinary from '../Screens.js/FIndVeterinary'
 //Componets
 import Home from './Home';
 import DrawerMenu from '../Components.js/DrawerMenu';
