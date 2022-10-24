@@ -10,6 +10,10 @@ target 'LocalPet' do
   # Flags change depending on the env values.
   flags = get_default_flags()
 
+  pre_install do |installer|
+    $RNMapboxMaps.pre_install(installer)
+  end
+
   use_react_native!(
     :path => config[:reactNativePath],
     # Hermes is now enabled by default. Disable by setting this flag to false.
@@ -39,5 +43,7 @@ target 'LocalPet' do
       :mac_catalyst_enabled => false
     )
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
+
+    $RNMapboxMaps.post_install(installer)
   end
 end
